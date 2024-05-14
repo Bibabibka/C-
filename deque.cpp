@@ -95,13 +95,13 @@ int main() {
     deq.pushBack(1);
     deq.pushBack(2);
     deq.pushFront(0);
-
+    deq.pushBack(4);
+    deq.popFront();
+    deq.popBack();
     cout << "Двухсторонняя очередь: ";
     while (!deq.empty()) {
         cout << deq.front->field << " ";
         deq.popFront();
     }
-    cout << endl;
-
     return 0;
 }
